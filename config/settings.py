@@ -27,6 +27,7 @@ SECRET_KEY = "django-insecure-4d!i^sr!9*dlu#b6!gb3r_p1!p#5u_(nobs+uq=6wotu4u2@k^
 DEBUG = True
 
 ALLOWED_HOSTS = [ 'ophel.pythonanywhere.com',
+                  '127.0.0.1',
                   ]
 
 TEMPLATE_CONTEXT_PROCESSORS = 'django.core.context_processors.static'
@@ -117,7 +118,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 STATIC_URL = '/static/'
 #STATICFILES_DIRS = '/static/'
@@ -125,7 +126,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/'),]
 #MEDIA_URL = '/media/'
 #MEDIA_ROOT = str(BASE_DIR.joinpath('media/'))
 # Default primary key field type
