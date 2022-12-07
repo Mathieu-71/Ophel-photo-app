@@ -26,7 +26,8 @@ SECRET_KEY = "django-insecure-4d!i^sr!9*dlu#b6!gb3r_p1!p#5u_(nobs+uq=6wotu4u2@k^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'ophel.pythonanywhere.com',
+                  ]
 
 TEMPLATE_CONTEXT_PROCESSORS = 'django.core.context_processors.static'
 
@@ -120,7 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #STATICFILES_DIRS = '/static/'
-STATIC_ROOT = '/home/Ophel'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'mediafiles'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/'),]
 #MEDIA_URL = '/media/'
 #MEDIA_ROOT = str(BASE_DIR.joinpath('media/'))
