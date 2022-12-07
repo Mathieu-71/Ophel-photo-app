@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),  # new
     path('admin/', admin.site.urls),
     path('', include('accueil.urls'), name='accueil'),
-    path('gallery/', include('gallery.urls'), name='gallery'),
+    path('gallery', include('gallery.urls'), name='gallery'),
 ]
 from django.conf import settings
 from django.conf.urls.static import static
