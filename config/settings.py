@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "django.contrib.staticfiles",
+    'django.contrib.staticfiles',
     "accueil.apps.AccueilConfig",
     "gallery",
 ]
@@ -118,11 +118,12 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),
+                    os.path.join(BASE_DIR, 'staticfiles')]
 
 STATIC_URL = '/static/'
+
 #STATICFILES_DIRS = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
