@@ -28,6 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_CONTEXT_PROCESSORS = 'django.core.context_processors.static'
 
 # Application definition
 
@@ -120,7 +121,7 @@ USE_TZ = True
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 #STATIC_ROOT = 'static'
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 #MEDIA_URL = '/media/'
 #MEDIA_ROOT = str(BASE_DIR.joinpath('media/'))
