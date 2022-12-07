@@ -120,7 +120,7 @@ USE_TZ = True
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = '/static/'
+#STATICFILES_DIRS = '/static/'
 STATIC_ROOT = '/home/Ophel'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/'),]
 #MEDIA_URL = '/media/'
