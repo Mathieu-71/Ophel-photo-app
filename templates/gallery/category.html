@@ -1,0 +1,23 @@
+{% load static %}
+<link href="{% static 'css/category.css' %}" rel="stylesheet">
+<link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+<header>
+    {% include 'base/header.html' %}
+</header>
+<div class="grid image-grid">
+    {% for cat in category %}
+  <div class="grid-block">
+    <div class="tile">
+
+      <a class="tile-link" href="{% url 'image-detail' slug1=cat.slug  %}">
+        <img class="tile-img tile-images" src="https://drive.google.com/thumbnail?id={{cat.picture}}" alt="test">
+      </a>
+    </div>
+  </div>
+{%endfor%}
+</div>
+<footer class="footer">
+    {% include 'base/footer.html' %}
+</footer>
+

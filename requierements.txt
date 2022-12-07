@@ -1,0 +1,4 @@
+django
+pillow
+django-resized
+urllib3

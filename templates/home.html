@@ -1,0 +1,27 @@
+<header>
+    {% include 'base/header.html' %}
+</header>
+
+
+{% block content %}
+
+   
+
+    {% if request.user.is_authenticated %}
+
+        <h1>Hi {{ request.user.username }}!</h1>
+
+        <a href="{% url 'account_logout' %}">Logout</a>
+
+    {% else %}
+
+        <h1>Vous n'êtes pas connecté.</h1>
+        <p>Pour le moment, ce site n'est pas accessible au publique.</p>
+
+        <a class="btn" href="{% url 'account_login' %}">Login</a>
+    {% endif %}
+
+{% endblock content %}
+<footer class="footer">
+    {% include 'base/footer.html' %}
+</footer>
