@@ -116,13 +116,12 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.1/howto/static-files/
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-#STATIC_ROOT = 'static'
-
-
-
+if DEBUG:
+    STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+       ]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #MEDIA_URL = '/media/'
 #MEDIA_ROOT = str(BASE_DIR.joinpath('media/'))
 # Default primary key field type
