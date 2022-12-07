@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "accueil.apps.AccueilConfig",
     "gallery",
-    "django_resized",
 ]
 
 MIDDLEWARE = [
