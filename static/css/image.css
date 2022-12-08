@@ -34,7 +34,14 @@ body{
     opacity: 0.75;
   }
 
+@media screen and (max-width: 380px)
   .carousel-item img{
 
     width:100%;
+  }
+
+@media screen and (min-width: 380px)
+ .carousel-item img{
+
+   width:60%;
   }
